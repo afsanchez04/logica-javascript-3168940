@@ -54,7 +54,18 @@ while(counter <= num) */
 
 //Cree un ciclo for que imprima la tabla de multiplicar del 7
 
-for(let i = 1; i <= 10; i++){
+/* for(let i = 1; i <= 10; i++){
   console.log(`7 x ${i} = ${7*1}`)
   //console.log("7 x " + i + " = " + (7*i) )
-}
+} */
+
+
+  //Ejercicio 5
+
+  //Cree un ciclo for que imprima 100 números
+  for(let i = 1; i <= 100; i++){
+    if( i >= 20 && i <= 30 ){
+      continue
+    }
+    console.log(i)
+  }
