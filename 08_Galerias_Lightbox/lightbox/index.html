@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>LIGHTBOX</title>
+	<style>
+		
+	*{
+		margin: 0;
+		padding: 0;
+	}
+
+	#fath{
+		margin: auto;
+		width: 405px;
+	
+	}
+
+	.min{
+		cursor: pointer;
+	}
+
+	#flotante{
+		position: absolute;
+		width: 100%;
+		height: 100vh;
+		z-index: 2;
+		/*display: none;*/
+		top:-100vh;
+	}
+
+	#cuadro{
+		position: absolute;
+		width: 100%;
+		height: 100vh;
+		background: #2e2e2e;
+		opacity: .9;
+	}
+
+	#main{
+		position: relative;
+		width: 415px;
+		height: 320px;
+		/*background: yellow;*/
+		left: 0;
+		right: 0;
+		top:50%;
+		bottom: 0;
+		margin: -160px auto ;
+	}
+
+	#equis{
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		background: lightgray; 
+		border-radius: 50%;
+		text-align: center;
+		line-height: 30px;
+		z-index: 2;
+		right: -10px;
+		top: -5px;
+		cursor: pointer;
+		transition-duration: .5s;	
+	}
+
+	#equis:hover{
+		background: gray;
+
+	}
+
+	#sig, #ant{
+		position: absolute;
+		width: 30px;
+		height: 60px;
+		background: lightgray; 
+		text-align: center;
+		line-height: 60px;
+		z-index: 2;	
+		transition-duration: .5s;
+	}
+
+	#sig{
+		right: -10px;
+		margin-top: -30px;
+		top: 50%;
+		cursor: pointer;
+	}
+
+	#sig:hover{
+		background: gray;
+
+	}
+
+	#ant{
+		left: -10px;
+		margin-top: -30px;
+		top: 50%;
+		cursor: pointer;
+	}
+
+	#ant:hover{
+		background: gray;
+
+	}
+
+	#flotante .mainimg{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top:0;
+		bottom: 0;
+		margin: auto;
+		border: 6px solid white;
+
+	}
+
+	
+
+/*
+	#flotante{
+		position: relative;
+		height: 100vh;
+		z-index: 999;
+	}
+
+	.cuadro{
+		position: relative;
+		height: 100vh;
+		width: 100%;
+		background: #2e2e2e;
+		opacity: .5;
+		z-index: 999;
+	}
+
+	.mainimg{
+		position: absolute;
+		margin: auto;
+		left: 0;
+		right: 0;
+		top:0;
+		bottom: 0;
+		z-index: 999;
+	}
+*/
+
+	</style>
+</head>
+<body>
+
+<div id="flotante">
+	<div id="cuadro"></div>
+	<div id="main">
+		<div id="equis">X</div>
+		<div id="sig">></div>
+		<div id="ant"><</div>
+		<img id="imgprincipal" class="mainimg" src="img1.jpg">
+	</div>
+</div>
+
+<div id="fath">
+	<img class="min" src="img1.jpg" width="200px">
+	<img class="min" src="img2.jpg" width="200px">
+
+</div>
+
+
+
+<script>
+	
+
+
+</script>
+
+</body>
+</html>
