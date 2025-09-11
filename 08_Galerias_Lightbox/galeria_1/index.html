@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Galería 1</title>
 	<style>
-		#galeria{
+		#galeria {
 			width: 400px;
 			height: 400px;
 			overflow: hidden;
-			
+
 		}
 
-		#contenedor{
+		#contenedor {
 			width: 2020px;
 			height: 300px;
-			
-		}
 
+		}
 	</style>
 </head>
+
 <body>
 
-<p>Primera Imagen</p>
-<div id="galeria">
-	<div id="contenedor">
-		<img src="img1.jpg">
-		<img src="img2.jpg">
-		<img src="img3.jpg">
-		<img src="img4.jpg">
-		<img src="img5.jpg">
+	<p class="titulo">Primera Imagen</p>
+	<div id="galeria">
+		<div id="contenedor">
+			<img src="img1.jpg">
+			<img src="img2.jpg">
+			<img src="img3.jpg">
+			<img src="img4.jpg">
+			<img src="img5.jpg">
+		</div>
+		<br><br>
+		<button class="btn-prev">Anterior</button>
+		<button class="btn-next">Siguiente</button>
 	</div>
-	<br><br>
-	<button>Siguiente</button>
-	<button>Anterior</button>
-</div>
 
 
-
+<script src="./app.js"></script>
 </body>
+
 </html>
