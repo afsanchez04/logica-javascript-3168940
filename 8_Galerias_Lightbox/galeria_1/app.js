@@ -12,7 +12,14 @@ const titulos = [
 let i = 1
 
 function prev() {
-  console.log("Anterior....")
+  console.log(i)
+  if (i === 1) {
+    i = 4
+  }
+  titulo.textContent = titulos[i]
+  contenedor.style.marginLeft = `${400 * i}px`
+  contenedor.style.transitionDuration = ".5s"
+  i++ //i=1
 }
 
 function next() {
