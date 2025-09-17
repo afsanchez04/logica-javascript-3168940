@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ej1 Scroll Javascript</title>
+	<style>
+
+		*{
+			margin:0;
+			padding: 0;
+		}
+
+		#container{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			height: 100vh;
+		}
+
+		#main{
+			width: 300px;
+			height: 300px;
+			background: tomato;
+			overflow: auto;
+			
+		}
+
+		#child{
+			width: 600px;
+			height: 600px;
+		}
+
+		#datoValor{
+			position: fixed;
+			font-size: 2em;
+			margin: 10px;
+		}
+
+	</style>
+</head>
+<body>
+
+
+<!--<button onclick="miFuncion()">Llevar</button>-->
+
+<div id="container">
+	<div id="main">
+		<div id="child">
+			<div id="datoValor">
+				<p>V: 0</p>
+				<p>H: 0</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>
